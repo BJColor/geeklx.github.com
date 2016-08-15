@@ -153,7 +153,8 @@
                     $(".gallery:first a[rel^='prettyPhoto']").prettyPhoto({ animation_speed: 'fast', slideshow: 10000, hideflash: true });
                 })
                 
-                var gallery = document.getElementById("galleryId");
+                //var gallery = document.getElementById("galleryId");
+                var gallery = getElementsByClassName("gallery piclist");
                 var htmlContent = "";
                 for (var i=185;i>176;i--) {
                     htmlContent += "<li ><a href=\"images/shiningchen/ShiningChen"+i+".png\" rel=\"prettyPhoto[]\"><img src=\"images/shiningchen/ShiningChen"+i+".png\"></a></li>";
