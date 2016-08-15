@@ -137,24 +137,9 @@
             <div class="infopic">
                 <div class="picbox">
                     <ul class="gallery piclist">
-                        <li><a href="images/shiningchen/ShiningChen185.png" rel="prettyPhoto[]">
-                            <img src="images/shiningchen/ShiningChen185.png" /></a></li>
-                        <li><a href="images/shiningchen/ShiningChen184.png" rel="prettyPhoto[]">
-                            <img src="images/shiningchen/ShiningChen184.png" /></a></li>
-                        <li><a href="images/shiningchen/ShiningChen183.png" rel="prettyPhoto[]">
-                            <img src="images/shiningchen/ShiningChen183.png" /></a></li>
-                        <li><a href="images/shiningchen/ShiningChen182.png" rel="prettyPhoto[]">
-                            <img src="images/shiningchen/ShiningChen182.png" /></a></li>
-                        <li><a href="images/shiningchen/ShiningChen181.png" rel="prettyPhoto[]">
-                            <img src="images/shiningchen/ShiningChen181.png" /></a></li>
-                        <li><a href="images/shiningchen/ShiningChen180.png" rel="prettyPhoto[]">
-                            <img src="images/shiningchen/ShiningChen180.png" /></a></li>
-                        <li><a href="images/shiningchen/ShiningChen179.png" rel="prettyPhoto[]">
-                            <img src="images/shiningchen/ShiningChen179.png" /></a></li>
-                        <li><a href="images/shiningchen/ShiningChen178.png" rel="prettyPhoto[]">
-                            <img src="images/shiningchen/ShiningChen178.png" /></a></li>
-                        <li><a href="images/shiningchen/ShiningChen177.png" rel="prettyPhoto[]">
-                            <img src="images/shiningchen/ShiningChen177.png" /></a></li>
+                        <!--<li><a href="images/shiningchen/ShiningChen185.png" rel="prettyPhoto[]">
+                            <img src="images/shiningchen/ShiningChen185.png" /></a></li>-->
+                            
                     </ul>
                 </div>
                 <div class="pic_prev">
@@ -167,6 +152,16 @@
                     $("area[rel^='prettyPhoto']").prettyPhoto();
                     $(".gallery:first a[rel^='prettyPhoto']").prettyPhoto({ animation_speed: 'fast', slideshow: 10000, hideflash: true });
                 })
+                
+                var gallery = document.getElementById("gallery")
+					var htmlContent = ""
+					for (var i=185;i>176;i--) {
+						htmlContent += "<li><a href=\"images/shiningchen/ShiningChen"+i+".png\" rel=\"prettyPhoto[]\">
+                            <img src=\"images/shiningchen/ShiningChen"+i+".png\" /></a></li>"}
+					gallery.innerHTML = htmlContent;
+					//alert(gallery.innerHTML)
+
+                
             </script>
             Inspired by <a href="http://blog.163.com/shiningc98@yeah/" target="_blank">幽间天使</a>.<br />
             Copyright © <a href="http://liangxiao.blog.51cto.com/" target="_blank">liangxiao</a>
