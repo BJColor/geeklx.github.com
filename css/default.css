@@ -34,6 +34,28 @@ body{margin:0;padding:0;background:#ffe;font-size:12px;overflow:auto}
 
 #copyright a{color:#666}
 
+#container_side{  
+    margin:15px auto;
+    position:relative;
+    width:1140px;    
+    height:200px;  
+}  
+#left_side{  
+    position:absolute;  
+    left:0;  
+    height:100%;  
+}  
+#content_side{  
+    height:100%;
+    width: 107%;
+}  
+#right_side{  
+    position:absolute;  
+    right:0;  
+    height:100%;  
+    top:0;
+}  
+
 @font-face
 {
    font-family: digit;
