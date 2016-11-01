@@ -1,4 +1,4 @@
-﻿<!DOCTYPE HTML>
+<!DOCTYPE HTML>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
 <title>我们的爱情如阳光般温暖纯粹....</title>
@@ -75,7 +75,9 @@
             </div>
         </div>
         <div id="apDiv3">
-            <embed src="music/2.mp3" width="127" height="25" hidden="true" autostart="true" loop="false"></embed>
+            
+            <!--old-->
+            <!-- <embed src="music/1.mp3" width="127" height="25" hidden="true" autostart="true" loop="false"></embed> -->
         </div>
         <div id="apDiv2">
             <object id="FlashID2" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="669"
@@ -142,21 +144,34 @@
     </div>
 
     <div id="copyright">
-        <div style="margin-bottom:20px"><img src="images/ShiningChen.png"  height="260" width="200"/><br /></div>
-        <a href="http://blog.163.com/shiningc98@yeah/" target="_blank">我们的时光.</a>
-        <div class="infopic">
-            <div class="picbox">
-                <ul class="gallery piclist" id ="galleryId">
-                    <!--<li><a href="images/shiningchen/ShiningChen185.png" rel="prettyPhoto[]">
-                        <img src="images/shiningchen/ShiningChen185.png" /></a></li>-->
-                            
-                </ul>
-            </div>
-            <div class="pic_prev">
-            </div>
-            <div class="pic_next">
-            </div>
-        </div>
+            <a href="http://blog.163.com/shiningc98@yeah/" target="_blank">我们的时光.</a>
+            <div id="container_side">  
+              <div id="left_side">
+                        <object type="application/x-shockwave-flash" data="music/jsmusic/dewplayer-playlist.swf" width="240" height="200" id="dewplayer" name="dewplayer">
+                        <param name="wmode" value="transparent" />
+                        <param name="movie" value="music/jsmusic/dewplayer-playlist.swf" />
+                        <param name="flashvars" value="showtime=true&autoreplay=true&autostart=1&showtime=1&randomplay=1&xml=music/playlist.xml" />
+                        </object>
+              </div>  
+              <div id="content_side"> 
+                    <div class="infopic">
+                        <div class="picbox">
+                            <ul class="gallery piclist" id ="galleryId">
+                                <!--<li><a href="images/shiningchen/ShiningChen185.png" rel="prettyPhoto[]">
+                                    <img src="images/shiningchen/ShiningChen185.png" /></a></li>-->
+                                        
+                            </ul>
+                        </div>
+                        <div class="pic_prev">
+                        </div>
+                        <div class="pic_next">
+                        </div>
+                    </div>
+              </div>  
+              <div id="right_side">
+                  <div style="margin-bottom:20px"><img src="images/ShiningChen.png"  height="200" width="154"/><br /></div>
+              </div>  
+            </div>  
         <script type="text/javascript">
             $(document).ready(function () {
                 $("area[rel^='prettyPhoto']").prettyPhoto();
