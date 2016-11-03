@@ -7,33 +7,33 @@
         </track>
         
         <track>
+          <location>music/mp3/11.mp3</location>
+          <title>飘洋过海来看你 - liangxiao</title>
+        </track>
+        
+        <track>
+          <location>music/mp3/4.mp3</location>
+          <title>好好(想把你写成一首歌) - liangxiao</title>
+        </track>
+                
+        <track>
+          <location>music/mp3/6.mp3</location>
+          <title>达尔文 - liangxiao</title>
+        </track>
+        
+        <track>
           <location>music/mp3/1.mp3</location>
-          <title>我是真的爱你 - 魏雪漫</title>
+          <title>爱情转移 - liangxiao</title>
+        </track>
+        
+        <track>
+          <location>music/mp3/5.mp3</location>
+          <title>他不懂 - liangxiao</title>
         </track>
         
         <track>
           <location>music/mp3/2.mp3</location>
           <title>往未来飞的客机 - 郭静</title>
-        </track>
-
-        <track>
-          <location>music/mp3/7.mp3</location>
-          <title>Lolita - 金海心</title>
-        </track>
-        
-        <track>
-          <location>music/mp3/4.mp3</location>
-          <title>好好(想把你写成一首歌) - 五月天</title>
-        </track>
-        
-        <track>
-          <location>music/mp3/6.mp3</location>
-          <title>达尔文 - 蔡健雅Tanya</title>
-        </track>
-        
-        <track>
-          <location>music/mp3/5.mp3</location>
-          <title>我 - 苏运莹</title>
         </track>
         
         <track>
@@ -50,8 +50,6 @@
           <location>music/mp3/3.mp3</location>
           <title>遇见 - 孙燕姿</title>
         </track>
-        
-        
 
     </trackList>
 </playlist>
