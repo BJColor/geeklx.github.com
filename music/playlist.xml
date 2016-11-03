@@ -15,6 +15,11 @@
           <location>music/mp3/3.mp3</location>
           <title>遇见 - 孙燕姿</title>
         </track>
+        
+        <track>
+          <location>music/mp3/4.mp3</location>
+          <title>好好(想把你写成一首歌) - 五月天</title>
+        </track>
 
     </trackList>
 </playlist>
