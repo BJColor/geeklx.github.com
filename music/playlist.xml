@@ -6,19 +6,24 @@
           <title>我是真的爱你 - 魏雪漫</title>
         </track>
         
-         <track>
+        <track>
           <location>music/mp3/2.mp3</location>
           <title>往未来飞的客机 - 郭静</title>
         </track>
 
-         <track>
+        <track>
+          <location>music/mp3/4.mp3</location>
+          <title>好好(想把你写成一首歌) - 五月天</title>
+        </track>
+        
+        <track>
           <location>music/mp3/3.mp3</location>
           <title>遇见 - 孙燕姿</title>
         </track>
         
         <track>
-          <location>music/mp3/4.mp3</location>
-          <title>好好(想把你写成一首歌) - 五月天</title>
+          <location>music/mp3/5.mp3</location>
+          <title>我 - 苏运莹</title>
         </track>
 
     </trackList>
