@@ -8,11 +8,12 @@
 <link href="css/default.css" type="text/css" rel="stylesheet">
 <!-- 链接js，保持html的效果显示 -->
 <!--<link type="text/css" href="css/lrtk.css" rel="stylesheet" />-->
+<link type="text/css" href="css/snowstyle.css" rel="stylesheet" >
 <link type="text/css" href="css/prettyPhoto.css" rel="stylesheet" />
 <link type="text/css" href="music/jsmusic/styles.css" rel="stylesheet" />    
-<link href="css/snowstyle.css" rel="stylesheet" type="text/css">
-<!-- <script type="text/javascript" src="js/jquery.js"></script> -->
-<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+
+<script type="text/javascript" src="js/jquery.js"></script>
+<!-- <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script> -->
 <!--<script type="text/javascript" src="js/jquery.prettyPhoto.js"></script>-->
 <!--<script type="text/javascript" src="js/lrtk.js"></script>-->
 <script type="text/javascript" src="http://d.lanrentuku.com/down/js/tupian-1007/js/jquery.prettyPhoto.js"></script>
@@ -24,10 +25,10 @@
 </head>
 <body>
 
-    <!-- <canvas width="100%" height="100%" class="flare"></canvas> 
-    <canvas width="100%" height="100%" class="snow"></canvas>
-    <canvas width="100%" height="100%" class="flake"></canvas> -->
-
+        
+    <canvas id="snow_canvas_flare" width="100%" height="100%" ></canvas> 
+        <canvas id="snow_canvas_snow" width="100%" height="100%" ></canvas>
+        <canvas id="snow_canvas_flake" width="100%" height="100%" ></canvas>
 <div id="mainDiv">
     <div id="content">
         <div id="code">
@@ -121,6 +122,7 @@
             </object>
         </div>
         <div id="apDiv1">
+   
             <object id="FlashID" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="442"
                 height="407">
                 <param name="movie" value="swf/1.swf">
@@ -136,7 +138,7 @@
                     <param name="quality" value="high">
                     <param name="wmode" value="transparent">
                     <param name="swfversion" value="6.0.65.0">
-                    <param name="expressinstall" value="Scripts/expressInstall.swf">
+                    <param name="expressinstall" value="Scripts/expressInstall.swf"> 
                     <!-- 浏览器将以下替代内容显示给使用 Flash Player 6.0 和更低版本的用户。 -->
                     <div>
                         <h4>
@@ -191,7 +193,7 @@
             var gallery = document.getElementById("galleryId");
             //var gallery = getElementsByClassName("gallery piclist");
             var htmlContent = "";
-            for (var i=115;i>0;i--) {
+            for (var i=114;i>0;i--) {
                 htmlContent += "<li ><a href=\"images/shiningchen/shiningchen"+i+".png\" rel=\"prettyPhoto[]\"><img src=\"images/shiningchen/shiningchen"+i+".png\"></a></li>";
             }
             gallery.innerHTML = htmlContent;
@@ -205,6 +207,7 @@
         2009-2016
     </div>
 </div>
+
 <script type="text/javascript">
     var offsetX = $("#loveHeart").width() / 2;
     var offsetY = $("#loveHeart").height() / 2 - 55;
@@ -244,11 +247,12 @@
     })
 </script>
 
+    
 <!--雪花bufen-->
 <script type="text/javascript">
 $(document).ready(function(){
 
-    $("canvas.flare").let_it_snow({
+    $("#snow_canvas_flare").let_it_snow({
         windPower: 0,
         speed: 0,
         color: "#392F52",
@@ -258,14 +262,14 @@ $(document).ready(function(){
         interaction: false
     }); 
 
-    $("canvas.snow").let_it_snow({
+    $("#snow_canvas_snow").let_it_snow({
         windPower: 3,
         speed: 1,
         count: 250,
         size: 0
     });
 
-    $("canvas.flake").let_it_snow({
+    $("#snow_canvas_flake").let_it_snow({
         windPower: -3,
         speed: 1,
         count: 20,
