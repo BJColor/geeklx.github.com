@@ -1,2 +1,2 @@
 # geeklx.github.com
-ShiningChen is my life.
+Shining is my life.
